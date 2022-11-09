@@ -14,7 +14,6 @@ from pathlib import Path
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
-
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,6 +28,10 @@ SECRET_KEY = 'django-insecure-kqro)6_s4urd^9c5zx)v-3r0gg_c3nl#dki_(0^i9!p=d%al5z
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+X_FRAME_OPTIONS = '*'
+CORS_ORIGIN_ALLOW_ALL = True
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000/']
 
 ALLOWED_HOSTS = ["*"]
 
